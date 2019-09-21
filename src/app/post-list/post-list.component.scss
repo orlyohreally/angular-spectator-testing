@@ -1,0 +1,27 @@
+.post-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.post {
+  margin: 16px;
+}
+
+.post__title {
+  font-weight: bold;
+}
+
+.post__content {
+  text-align: justify;
+}
+.mat-h1 {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .post {
+    width: 400px;
+  }
+}

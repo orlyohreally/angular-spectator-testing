@@ -1,0 +1,15 @@
+<div class="mat-h1">Posts</div>
+<div class="post-list">
+  <ng-container *ngIf="postList | async as posts">
+    <mat-card *ngFor="let post of posts | slice: 0:10" class="post">
+      <mat-card-header>
+        <mat-card-title class="post__title">{{ post.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="post__content">
+        <p>
+          {{ post.body }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>
